@@ -1,1 +1,52 @@
-<h1 id="title">Tell Me About Music</h1>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 id="title">Tell Me About Music</h1>
+  <p id="description">This is a survey to discuss music interests</p>
+  <form id="survey-form" action="index.html" method="post">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" name="name" id="name" placeholder="John Doe" required><br><br>
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required><br><br>
+    <label for="number" id="number-label">Number: </label>
+    <input type="number" name="number" id="number" min="0" max="100" placeholder="100" required><br><br>
+    <label for="genre">Choose a genre:</label>
+    <select id="dropdown" name="genre">
+      <option value="rock">Rock</option>
+      <option value="electronic">Electronic</option>
+      <option value="hip-hop">Hip Hop</option>
+    </select>
+    <br><br>
+    <label for="music-festival">Choose Your Favorite Music Festival:</label>
+    <br><br>
+    <input type="radio" name="music-festival" id="coachella" value="coachella">
+    <label for="coachella">Coachella</label>
+    <input type="radio" name="music-festival" id="bonnaroo" value="bonnaroo">
+    <label for="bonnaroo">Bonnaroo</label>
+    <input type="radio" name="music-festival" id="electric-daisy-carnival" value="electric-daisy-carnival">
+    <label for="electric-daisy-carnival">Electric Daisy Carnival (EDC)</label>
+    <br><br>
+    <label for="station">Radio Stations You Listen To:</label><br>
+    <input type="checkbox" id="station1" name="station1" value="WMMS">
+    <label for="station1"> WMMS 100.7</label><br>
+    <input type="checkbox" id="station2" name="station2" value="Kiss-FM">
+    <label for="station2"> Kiss FM 96.5</label><br>
+    <input type="checkbox" id="station3" name="station3" value="Magic">
+    <label for="station3"> Magic 105.7</label><br>
+    <br>
+    <label for="comment">Any Additional Comments?</label>
+    <br><br>
+    <textarea name="comment" rows="8" cols="80" placeholder="Type here"></textarea>
+    <br><br><input type="submit" name="submit" id="submit"></input>
+  </form>
+  <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
